@@ -17,6 +17,7 @@ export class PainelComponent implements OnInit{
   public rodadaFrase : Frase
 
   public progresso: number = 0
+  public tentativas: number = 3
 
   constructor() {
     this.rodadaFrase = this.frases[this.rodada]
@@ -45,8 +46,14 @@ export class PainelComponent implements OnInit{
       this.atualizaRodada()
       
     } else {
-      alert('Tente novamente')
+      //decrementar a variavel tentativas
+      this.tentativas--
+
+      if(this.tentativas==-1){
+        alert('Você perdeu todas as tentativas')
+      }
     }
+    
       
   }
 
