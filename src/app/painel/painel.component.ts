@@ -29,7 +29,7 @@ export class PainelComponent implements OnInit, OnDestroy{
   }
 
   ngOnDestroy(): void {
-    console.log('O componente paiel foi destruído')
+
   }
  
 

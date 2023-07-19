@@ -13,7 +13,7 @@ export class TentativasComponent implements OnInit {
   ]
 
   constructor(){
-    console.log(this.coracoes)
+    
   }
   ngOnChanges(){
     if(this.tentativas != this.coracoes.length){
@@ -23,6 +23,6 @@ export class TentativasComponent implements OnInit {
     }
   }
   ngOnInit(){
-    console.log('tentativas recebidas do painel: ', this.tentativas)
+    
   }
 }
